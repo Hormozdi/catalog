@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ساندویچ خونه — کاتالوگ صبحانه و ناهار خانگی</title>
+  <meta name="description" content="کاتالوگ منوی ساندویچ‌های خانگی صبحانه و ناهار — آمادهٔ مشاهدهٔ آنلاین و چاپ A4">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lalezar&family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Vazirmatn', ui-sans-serif, system-ui, sans-serif; }
+    .font-display { font-family: 'Lalezar', 'Vazirmatn', sans-serif; font-weight: 400; }
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    ::selection { background: #BC3B23; color: #FBF6EB; }
+
+    /* بافت کاغذ نقطه‌ای لطیف */
+    .paper-dots {
+      background-image: radial-gradient(rgba(62,42,30,.06) 1.2px, transparent 1.3px);
+      background-size: 11px 11px;
+    }
+    /* رمهٔ سفرهٔ چهارخانه */
+    .cloth-lines {
+      background-image:
+        repeating-linear-gradient(0deg, rgba(255,255,255,.13) 0 14px, rgba(0,0,0,0) 14px 28px),
+        repeating-linear-gradient(90deg, rgba(255,255,255,.13) 0 14px, rgba(0,0,0,0) 14px 28px);
+    }
+    /* خط نقطه‌چین بین نام آیتم و قیمت */
+    .leader { border-bottom: 3px dotted rgba(62,42,30,.32); margin-bottom: 7px; }
+    .leader-sm { border-bottom: 2.5px dotted rgba(62,42,30,.28); margin-bottom: 5px; }
+
+    .page { width: 210mm; height: 297mm; }
+
+    @page { size: A4 portrait; margin: 0; }
+    @media print {
+      html, body { background: #ffffff !important; }
+      .wrap { padding: 0 !important; gap: 0 !important; }
+      .page {
+        box-shadow: none !important;
+        margin: 0 !important;
+        break-after: page;
+        page-break-after: always;
+      }
+      .page:last-child { break-after: auto; page-break-after: auto; }
+      .screen-only { display: none !important; }
+    }
+  </style>
+</head>
+<body class="bg-[#DCD4C3]">
+
+  <!-- نوار راهنمای نسخهٔ آنلاین (فقط روی صفحه‌نمایش دیده می‌شود) -->
+  <div class="screen-only sticky top-0 z-50 bg-[#3E2A1E] text-[#FBF6EB]/90">
+    <div class="max-w-[210mm] mx-auto px-5 py-3 flex flex-wrap items-center justify-between gap-2 text-[12.5px]">
+      <p class="font-semibold">پیش‌نمایش آنلاین کاتالوگ — ۴ صفحهٔ A4</p>
+      <p class="text-[#FBF6EB]/70">برای چاپ: <span class="font-bold text-[#E8B04B]">Ctrl + P</span> • کاغذ <span class="font-bold text-[#E8B04B]">A4</span> • حاشیه: <span class="font-bold text-[#E8B04B]">هیچ‌کدام</span> • گزینهٔ «گرافیک پس‌زمینه» روشن باشد</p>
+    </div>
+  </div>
+
+  <main class="wrap flex flex-col items-center gap-[8mm] px-4 py-[8mm]">
+
+    <!-- ═══════════════ صفحهٔ ۱ : جلد ═══════════════ -->
+    <section class="page relative mx-auto bg-[#FBF6EB] overflow-hidden shadow-[0_10px_50px_rgba(62,42,30,.25)]">
+      <div class="absolute inset-0 paper-dots"></div>
+      <div class="absolute inset-[5mm] border-2 border-dashed border-[#3E2A1E]/20 rounded-[6mm] pointer-events-none"></div>
+
+      <div class="relative h-full flex flex-col px-[13mm] pt-[11mm] pb-[10mm]">
+
+        <!-- ردیف بالای جلد -->
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-full bg-[#BC3B23] text-[#FBF6EB] flex items-center justify-center rotate-[-6deg]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M17 21a1 1 0 0 0 1-1v-5.35c0-.457.316-.844.727-1.041a4 4 0 0 0-2.134-7.589 5 5 0 0 0-9.186 0 4 4 0 0 0-2.134 7.588c.411.198.727.585.727 1.041V20a1 1 0 0 0 1 1Z"/><path d="M6 17h12"/></svg>
+            </div>
+            <div>
+              <p class="font-display text-lg leading-none text-[#3E2A1E]">ساندویچ خونه</p>
+              <p class="text-[11px] text-[#3E2A1E]/60 mt-1">از ۱۴۰۰، هر روز تازه</p>
+            </div>
+          </div>
+          <p class="text-[12px] font-semibold text-[#3E2A1E]/70 tracking-wide">کاتالوگ بهار و تابستان ۱۴۰۴</p>
+        </div>
+
+        <!-- تصویر شاخص -->
+        <div class="relative mt-[7mm]">
+          <div class="rounded-[7mm] overflow-hidden ring-1 ring-[#3E2A1E]/15 h-[86mm]">
+            <img src="https://images.pexels.com/photos/5555754/pexels-photo-5555754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="پنینی‌های گریل‌شده روی سینی چوبی" class="w-full h-full object-cover">
+          </div>
+          <!-- مُهر گرد «خانگی و تازه» -->
+          <div class="absolute -bottom-6 left-[8mm] w-[30mm] h-[30mm] rounded-full bg-[#E8B04B] text-[#3E2A1E] rotate-[8deg] shadow-lg flex items-center justify-center">
+            <div class="w-[25mm] h-[25mm] rounded-full border-2 border-dashed border-[#3E2A1E]/50 flex flex-col items-center justify-center gap-1 -rotate-[8deg]">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              <p class="font-display text-[15px] leading-none">خانگی و تازه</p>
+              <p class="text-[9px] font-bold">هر روز صبح</p>
+            </div>
+          </div>
+          <!-- چسب تزئینی -->
+          <div class="absolute -top-2 right-[18mm] w-[26mm] h-[7mm] bg-[#6F7D4C]/80 rotate-[-3deg] rounded-sm"></div>
+          <div class="absolute -top-2 left-[18mm] w-[26mm] h-[7mm] bg-[#BC3B23]/70 rotate-[4deg] rounded-sm"></div>
+        </div>
+
+        <!-- تیتر اصلی -->
+        <div class="mt-[12mm] text-center">
+          <p class="text-[13px] font-bold tracking-[.35em] text-[#BC3B23]">کاتالــوگ مــنــو</p>
+          <h1 class="font-display text-[58px] leading-[1.05] text-[#3E2A1E] mt-1">ساندویچ‌های خانگی</h1>
+          <p class="font-display text-[24px] text-[#6F7D4C] mt-1">صبحانه و ناهار، از تابهٔ ما به میز شما</p>
+        </div>
+
+        <!-- ویژگی‌ها -->
+        <div class="mt-[8mm] grid grid-cols-4 gap-[3mm]">
+          <div class="bg-[#F3EADA] rounded-2xl border-2 border-dashed border-[#3E2A1E]/15 py-3 px-2 text-center">
+            <p class="font-display text-[15px] text-[#3E2A1E]">نانِ تازه</p>
+            <p class="text-[10.5px] text-[#3E2A1E]/60 mt-1">هر روز از نانوایی محله</p>
+          </div>
+          <div class="bg-[#F3EADA] rounded-2xl border-2 border-dashed border-[#3E2A1E]/15 py-3 px-2 text-center">
+            <p class="font-display text-[15px] text-[#3E2A1E]">سس‌های دست‌ساز</p>
+            <p class="text-[10.5px] text-[#3E2A1E]/60 mt-1">دستور مخصوص خودمان</p>
+          </div>
+          <div class="bg-[#F3EADA] rounded-2xl border-2 border-dashed border-[#3E2A1E]/15 py-3 px-2 text-center">
+            <p class="font-display text-[15px] text-[#3E2A1E]">سبزیِ روزِ بازار</p>
+            <p class="text-[10.5px] text-[#3E2A1E]/60 mt-1">تازه، جعبه‌گشتی نداریم</p>
+          </div>
+          <div class="bg-[#F3EADA] rounded-2xl border-2 border-dashed border-[#3E2A1E]/15 py-3 px-2 text-center">
+            <p class="font-display text-[15px] text-[#3E2A1E]">پختِ روزانه</p>
+            <p class="text-[10.5px] text-[#3E2A1E]/60 mt-1">بدون انبار و منجمدی</p>
+          </div>
+        </div>
+
+        <!-- حکایت کوتاه -->
+        <div class="mt-[7mm] bg-[#FFFCF3] rounded-[5mm] border-2 border-dashed border-[#BC3B23]/30 px-[7mm] py-[5mm] flex items-start gap-4">
+          <svg viewBox="0 0 24 24" class="w-8 h-8 shrink-0 text-[#BC3B23] mt-1" fill="currentColor"><path d="M10 8c-3 0-5 2-5 5v3h4v-5H7c0-1.5 1-3 3-3V8Zm10 0c-3 0-5 2-5 5v3h4v-5h-2c0-1.5 1-3 3-3V8Z" transform="rotate(180 12 12)"/></svg>
+          <p class="text-[13.5px] leading-[2] text-[#3E2A1E]/85">ما یه خانواده‌ایم که عاشق آشپزین؛ هر صبح کنار هم نان رو تازه می‌کنیم، سس‌ها رو همون‌روز درست می‌کنیم و هر ساندویچ رو مثل ساندویچِ مهمانِ خونه‌مون سرو می‌کنیم. هیچ‌چیزی دپو نمی‌شه؛ هرچی امروز پخت شد، امروزه.</p>
+        </div>
+
+        <!-- ساعات سرو -->
+        <div class="mt-[6mm] grid grid-cols-2 gap-[3mm]">
+          <div class="cloth-lines bg-[#BC3B23] text-[#FBF6EB] rounded-2xl px-[5mm] py-[4mm] flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/></svg>
+              <p class="font-display text-[17px]">میزِ صبحانه</p>
+            </div>
+            <p class="text-[12px] font-bold">۷:۰۰ تا ۱۱:۳۰</p>
+          </div>
+          <div class="cloth-lines bg-[#D98E2B] text-[#3E2A1E] rounded-2xl px-[5mm] py-[4mm] flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+              <p class="font-display text-[17px]">میزِ ناهار</p>
+            </div>
+            <p class="text-[12px] font-bold">۱۲:۰۰ تا ۱۶:۰۰</p>
+          </div>
+        </div>
+
+        <!-- پاورقی جلد -->
+        <div class="mt-auto pt-[5mm] flex items-center justify-between border-t-2 border-dotted border-[#3E2A1E]/25 text-[11px] text-[#3E2A1E]/60">
+          <p class="font-semibold">ساندویچ خونه • سفارش: ۰۹۱۲ ۳۴۵ ۶۷۸۹</p>
+          <p>صفحهٔ ۱ از ۴</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ صفحهٔ ۲ : صبحانه ═══════════════ -->
+    <section class="page relative mx-auto bg-[#FBF6EB] overflow-hidden shadow-[0_10px_50px_rgba(62,42,30,.25)]">
+      <div class="absolute inset-0 paper-dots"></div>
+      <div class="absolute inset-[5mm] border-2 border-dashed border-[#3E2A1E]/20 rounded-[6mm] pointer-events-none"></div>
+
+      <div class="relative h-full flex flex-col px-[13mm] pt-[11mm] pb-[10mm]">
+
+        <!-- بنر بخش -->
+        <div class="cloth-lines bg-[#BC3B23] rounded-[5mm] text-[#FBF6EB] pl-[6mm] pr-[6mm] py-[5mm] flex items-center justify-between">
+          <div class="flex items-center gap-[4mm]">
+            <div class="w-11 h-11 rounded-full bg-[#FBF6EB]/15 border-2 border-dashed border-[#FBF6EB]/50 flex items-center justify-center">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M12 22c6.23-.05 7.87-5.57 7.5-10-.36-4.34-3.95-9.96-7.5-10-3.55.04-7.14 5.66-7.5 10-.37 4.43 1.27 9.95 7.5 10z"/></svg>
+            </div>
+            <div>
+              <h2 class="font-display text-[30px] leading-none">میزِ صبحانه</h2>
+              <p class="text-[11.5px] mt-1 text-[#FBF6EB]/80">هر روز هفته • سرو از ساعت ۷:۰۰ تا ۱۱:۳۰</p>
+            </div>
+          </div>
+          <p class="font-display text-[52px] leading-none text-[#FBF6EB]/25 select-none">۰۷</p>
+        </div>
+
+        <!-- آیتم‌ها -->
+        <ul class="mt-[5mm] flex flex-col divide-y-2 divide-dashed divide-[#3E2A1E]/15">
+
+          <li class="py-[3.4mm] flex gap-[4.5mm] items-start">
+            <div class="relative shrink-0">
+              <img src="https://images.pexels.com/photos/3920506/pexels-photo-3920506.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="نیمروی خونه" class="w-[23mm] h-[23mm] rounded-full object-cover ring-2 ring-[#BC3B23] ring-offset-[3px] ring-offset-[#FBF6EB]">
+              <span class="font-display absolute -top-1 -right-1 text-[13px] bg-[#3E2A1E] text-[#FBF6EB] w-6 h-6 rounded-full flex items-center justify-center">۱</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-end gap-2">
+                <h3 class="font-display text-[20px] text-[#3E2A1E] leading-none">نیمروی خونه</h3>
+                <span class="inline-flex items-center gap-1 text-[10px] font-bold text-[#BC3B23] bg-[#BC3B23]/10 rounded-full px-2 py-0.5 mb-[2px]"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>پرفروش‌ترین</span>
+                <span class="leader flex-1 min-w-4"></span>
+                <span class="whitespace-nowrap rounded-lg border-2 border-dashed border-[#BC3B23]/45 bg-[#FFFCF3] px-2 py-0.5 rotate-[-1.5deg]"><span class="font-display text-[19px] text-[#BC3B23]">۶۸٬۰۰۰</span> <span class="text-[10px] font-bold text-[#3E2A1E]/60">تومان</span></span>
+              </div>
+              <p class="text-[12.5px] leading-6 text-[#3E2A1E]/70 mt-[2mm]">دو عدد نیم‌رو با کرهٔ محلی روی باگت تازه، گوجهٔ سرخ‌شده، پنیر لیقوان و سبزی خوردن</p>
+            </div>
+          </li>
+
+          <li class="py-[3.4mm] flex gap-[4.5mm] items-start">
+            <div class="relative shrink-0">
+              <img src="https://images.pexels.com/photos/19047500/pexels-photo-19047500.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="املت لوبیای مامان" class="w-[23mm] h-[23mm] rounded-full object-cover ring-2 ring-[#BC3B23] ring-offset-[3px] ring-offset-[#FBF6EB]">
+              <span class="font-display absolute -top-1 -right-1 text-[13px] bg-[#3E2A1E] text-[#FBF6EB] w-6 h-6 rounded-full flex items-center justify-center">۲</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-end gap-2">
+                <h3 class="font-display text-[20px] text-[#3E2A1E] leading-none">املت لوبیای مامان</h3>
+                <span class="leader flex-1 min-w-4"></span>
+                <span class="whitespace-nowrap rounded-lg border-2 border-dashed border-[#BC3B23]/45 bg-[#FFFCF3] px-2 py-0.5 rotate-[1.5deg]"><span class="font-display text-[19px] text-[#BC3B23]">۷۵٬۰۰۰</span> <span class="text-[10px] font-bold text-[#3E2A1E]/60">تومان</span></span>
+              </div>
+              <p class="text-[12.5px] leading-6 text-[#3E2A1E]/70 mt-[2mm]">گوجه و لوبیای چیتی، قارچ و ادویهٔ مخلوط دست‌ساز؛ کنارش نان سنگک داغ و پیازچهٔ تازه</p>
+            </div>
+          </li>
+
+          <li class="py-[3.4mm] flex gap-[4.5mm] items-start">
+            <div class="relative shrink-0">
+              <img src="https://images.pexels.com/photos/17582424/pexels-photo-17582424.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="کروسان ژامبون و پنیر" class="w-[23mm] h-[23mm] rounded-full object-cover ring-2 ring-[#BC3B23] ring-offset-[3px] ring-offset-[#FBF6EB]">
+              <span class="font-display absolute -top-1 -right-1 text-[13px] bg-[#3E2A1E] text-[#FBF6EB] w-6 h-6 rounded-full flex items-center justify-center">۳</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-end gap-2">
+                <h3 class="font-display text-[20px] text-[#3E2A1E] leading-none">کروسان ژامبون و پنیر</h3>
+                <span class="leader flex-1 min-w-4"></span>
+                <span class="whitespace-nowrap rounded-lg border-2 border-dashed border-[#BC3B23]/45 bg-[#FFFCF3] px-2 py-0.5 rotate-[-1deg]"><span class="font-display text-[19px] text-[#BC3B23]">۱۱۰٬۰۰۰</span> <span class="text-[10px] font-bold text-[#3E2A1E]/60">تومان</span></span>
+              </div>
+              <p class="text-[12.5px] leading-6 text-[#3E2A1E]/70 mt-[2mm]">کروسان پف‌کردهٔ روز، ژامبون دودی، پنیر گودا و دیپ خردلِ همیشگیِ خونه</p>
+            </div>
+          </li>
+
+          <li class="py-[3.4mm] flex gap-[4.5mm] items-start">
+            <div class="relative shrink-0">
+              <img src="https://images.pexels.com/photos/15820912/pexels-photo-15820912.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="تست فرانسوی عسل و دارچین" class="w-[23mm] h-[23mm] rounded-full object-cover ring-2 ring-[#BC3B23] ring-offset-[3px] ring-offset-[#FBF6EB]">
+              <span class="font-display absolute -top-1 -right-1 text-[13px] bg-[#3E2A1E] text-[#FBF6EB] w-6 h-6 rounded-full flex items-center justify-center">۴</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-end gap-2">
+                <h3 class="font-display text-[20px] text-[#3E2A1E] leading-none">تست فرانسوی عسل و دارچین</h3>
+                <span class="leader flex-1 min-w-4"></span>
+                <span class="whitespace-nowrap rounded-lg border-2 border-dashed border-[#BC3B23]/45 bg-[#FFFCF3] px-2 py-0.5 rotate-[2deg]"><span class="font-display text-[19px] text-[#BC3B23]">۸۵٬۰۰۰</span> <span class="text-[10px] font-bold text-[#3E2A1E]/60">تومان</span></span>
+              </div>
+              <p class="text-[12.5px] leading-6 text-[#3E2A1E]/70 mt-[2mm]">نان شیرمال در خمیر تخم‌مرغ و شیر، با عسلِ طبیعی، دارچین و موزِ کاراملی — محبوب بچه‌ها</p>
+            </div>
+          </li>
+
+          <li class="py-[3.4mm] flex gap-[4.5mm] items-start">
+            <div class="relative shrink-0">
+              <img src="https://images.pexels.com/photos/7936950/pexels-photo-7936950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="تخم‌مرغ و آووکادو" class="w-[23mm] h-[23mm] rounded-full object-cover ring-2 ring-[#BC3B23] ring-offset-[3px] ring-offset-[#FBF6EB]">
+              <span class="font-display absolute -top-1 -right-1 text-[13px] bg-[#3E2A1E] text-[#FBF6EB] w-6 h-6 rounded-full flex items-center justify-center">۵</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-end gap-2">
+                <h3 class="font-display text-[20px] text-[#3E2A1E] leading-none">تخم‌مرغ و آووکادو</h3>
+                <span class="inline-flex items-center gap-1 text-[10px] font-bold text-[#6F7D4C] bg-[#6F7D4C]/10 rounded-full px-2 py-0.5 mb-[2px]"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>گیاهی</span>
+                <span class="leader flex-1 min-w-4"></span>
+                <span class="whitespace-nowrap rounded-lg border-2 border-dashed border-[#BC3B23]/45 bg-[#FFFCF3] px-2 py-0.5 rotate-[-2deg]"><span class="font-display text-[19px] text-[#BC3B23]">۹۲٬۰۰۰</span> <span class="text-[10px] font-bold text-[#3E2A1E]/60">تومان</span></span>
+              </div>
+              <p class="text-[12.5px] leading-6 text-[#3E2A1E]/70 mt-[2mm]">تخم‌مرغ آب‌پز ورقه‌شده، آووکادوی له‌شده با لیموی تازه و نانِ جوی تست‌شده</p>
+            </div>
+          </li>
+
+          <li class="py-[3.4mm] flex gap-[4.5mm] items-start">
+            <div class="relative shrink-0">
+              <img src="https://images.pexels.com/photos/12261096/pexels-photo-12261096.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="کروسان صبحانهٔ کامل" class="w-[23mm] h-[23mm] rounded-full object-cover ring-2 ring-[#BC3B23] ring-offset-[3px] ring-offset-[#FBF6EB]">
+              <span class="font-display absolute -top-1 -right-1 text-[13px] bg-[#3E2A1E] text-[#FBF6EB] w-6 h-6 rounded-full flex items-center justify-center">۶</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-end gap-2">
+                <h3 class="font-display text-[20px] text-[#3E2A1E] leading-none">کروسان صبحانهٔ کامل</h3>
+                <span class="leader flex-1 min-w-4"></span>
+                <span class="whitespace-nowrap rounded-lg border-2 border-dashed border-[#BC3B23]/45 bg-[#FFFCF3] px-2 py-0.5 rotate-[1deg]"><span class="font-display text-[19px] text-[#BC3B23]">۱۱۸٬۰۰۰</span> <span class="text-[10px] font-bold text-[#3E2A1E]/60">تومان</span></span>
+              </div>
+              <p class="text-[12.5px] leading-6 text-[#3E2A1E]/70 mt-[2mm]">کروسان با تخم‌مرغ نیم‌رو، پنیر پیتزا، ریحانِ تازه و سس مخصوص خونه — برای صبح‌های گرسنه!</p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- یادداشت بخش -->
+        <div class="mt-auto mb-[4mm] bg-[#F3EADA] rounded-2xl border-2 border-dashed border-[#3E2A1E]/15 px-[5mm] py-[3.5mm] flex items-center gap-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 shrink-0 text-[#BC3B23]"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          <p class="text-[11.5px] leading-5 text-[#3E2A1E]/75">کنار هر صبحانه، <span class="font-bold text-[#BC3B23]">چای سقزی رایگانه</span> • افزودن هر مادهٔ دلخواه (پنیر، تخم‌مرغ، سس) فقط ۱۲ تا ۱۸ هزار تومان • امکان آماده‌سازی کم‌نمک و کم‌چرب</p>
+        </div>
+
+        <!-- پاورقی -->
+        <div class="pt-[4mm] flex items-center justify-between border-t-2 border-dotted border-[#3E2A1E]/25 text-[11px] text-[#3E2A1E]/60">
+          <p class="font-semibold">ساندویچ خونه • سفارش: ۰۹۱۲ ۳۴۵ ۶۷۸۹</p>
+          <p>صفحهٔ ۲ از ۴</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ صفحهٔ ۳ : ناهار ═══════════════ -->
+    <section class="page relative mx-auto bg-[#FBF6EB] overflow-hidden shadow-[0_10px_50px_rgba(62,42,30,.25)]">
+      <div class="absolute inset-0 paper-dots"></div>
+      <div class="absolute inset-[5mm] border-2 border-dashed border-[#3E2A1E]/20 rounded-[6mm] pointer-events-none"></div>
+
+      <div class="relative h-full flex flex-col px-[13mm] pt-[11mm] pb-[10mm]">
+
+        <!-- بنر بخش -->
+        <div class="cloth-lines bg-[#D98E2B] rounded-[5mm] text-[#3E2A1E] pl-[6mm] pr-[6mm] py-[5mm] flex items-center justify-between">
+          <div class="flex items-center gap-[4mm]">
+            <div class="w-11 h-11 rounded-full bg-[#3E2A1E]/10 border-2 border-dashed border-[#3E2A1E]/40 flex items-center justify-center">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+            </div>
+            <div>
+              <h2 class="font-display text-[30px] leading-none">میزِ ناهار</h2>
+              <p class="text-[11.5px] mt-1 text-[#3E2A1E]/75">هر روز هفته • سرو از ساعت ۱۲:۰۰ تا ۱۶:۰۰</p>
+            </div>
+          </div>
+          <p class="font-display text-[52px] leading-none text-[#3E2A1E]/20 select-none">۱۲</p>
+        </div>
+
+        <!-- آیتم‌ها -->
+        <ul class="mt-[5mm] flex flex-col divide-y-2 divide-dashed divide-[#3E2A1E]/15">
+
+          <li class="py-[3.4mm] flex gap-[4.5mm] items-start">
+            <div class="relative shrink-0">
+              <img src="https://images.pexels.com/photos/40175230/pexels-photo-40175230.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="مرغ گریل زعفرانی" class="w-[23mm] h-[23mm] rounded-full object-cover ring-2 ring-[#D98E2B] ring-offset-[3px] ring-offset-[#FBF6EB]">
+              <span class="font-display absolute -top-1 -right-1 text-[13px] bg-[#3E2A1E] text-[#FBF6EB] w-6 h-6 rounded-full flex items-center justify-center">۱</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-end gap-2">
+                <h3 class="font-display text-[20px] text-[#3E2A1E] leading-none">مرغ گریل زعفرانی</h3>
+                <span class="inline-flex items-center gap-1 text-[10px] font-bold text-[#BC3B23] bg-[#BC3B23]/10 rounded-full px-2 py-0.5 mb-[2px]"><svg viewBox="0 0 24 24" fill="currentColor" class="w-3 h-3"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>پرفروش‌ترین</span>
+                <span class="leader flex-1 min-w-4"></span>
+                <span class="whitespace-nowrap rounded-lg border-2 border-dashed border-[#D98E2B]/60 bg-[#FFFCF3] px-2 py-0.5 rotate-[1.5deg]"><span class="font-display text-[19px] text-[#B4741C]">۱۴۵٬۰۰۰</span> <span class="text-[10px] font-bold text-[#3E2A1E]/60">تومان</span></span>
+              </div>
+              <p class="text-[12.5px] leading-6 text-[#3E2A1E]/70 mt-[2mm]">فیلهٔ مرغِ یک‌شب مانده در زعفران و لیمو، کاهوی پیچ، گوجه و سس سیرِ خونه در نان چاباتا</p>
+            </div>
+          </li>
+
+          <li class="py-[3.4mm] flex gap-[4.5mm] items-start">
+            <div class="relative shrink-0">
+              <img src="https://images.pexels.com/photos/32715053/pexels-photo-32715053.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="پنینی ژامبون دودی" class="w-[23mm] h-[23mm] rounded-full object-cover ring-2 ring-[#D98E2B] ring-offset-[3px] ring-offset-[#FBF6EB]">
+              <span class="font-display absolute -top-1 -right-1 text-[13px] bg-[#3E2A1E] text-[#FBF6EB] w-6 h-6 rounded-full flex items-center justify-center">۲</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-end gap-2">
+                <h3 class="font-display text-[20px] text-[#3E2A1E] leading-none">پنینی ژامبون دودی</h3>
+                <span class="leader flex-1 min-w-4"></span>
+                <span class="whitespace-nowrap rounded-lg border-2 border-dashed border-[#D98E2B]/60 bg-[#FFFCF3] px-2 py-0.5 rotate-[-1deg]"><span class="font-display text-[19px] text-[#B4741C]">۱۲۵٬۰۰۰</span> <span class="text-[10px] font-bold text-[#3E2A1E]/60">تومان</span></span>
+              </div>
+              <p class="text-[12.5px] leading-6 text-[#3E2A1E]/70 mt-[2mm]">ژامبون دودی، موزارلای ذوب‌شده، خیارشورِ دست‌ساز و خردل؛ پرس‌شده و داغ تحویل داده می‌شه</p>
+            </div>
+          </li>
+
+          <li class="py-[3.4mm] flex gap-[4.5mm] items-start">
+            <div class="relative shrink-0">
+              <img src="https://images.pexels.com/photos/32402074/pexels-photo-32402074.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="فلافل کرهم و طحینی" class="w-[23mm] h-[23mm] rounded-full object-cover ring-2 ring-[#D98E2B] ring-offset-[3px] ring-offset-[#FBF6EB]">
+              <span class="font-display absolute -top-1 -right-1 text-[13px] bg-[#3E2A1E] text-[#FBF6EB] w-6 h-6 rounded-full flex items-center justify-center">۳</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-end gap-2">
+                <h3 class="font-display text-[20px] text-[#3E2A1E] leading-none">فلافل کرهم و طحینی</h3>
+                <span class="inline-flex items-center gap-1 text-[10px] font-bold text-[#6F7D4C] bg-[#6F7D4C]/10 rounded-full px-2 py-0.5 mb-[2px]"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>گیاهی</span>
+                <span class="leader flex-1 min-w-4"></span>
+                <span class="whitespace-nowrap rounded-lg border-2 border-dashed border-[#D98E2B]/60 bg-[#FFFCF3] px-2 py-0.5 rotate-[2deg]"><span class="font-display text-[19px] text-[#B4741C]">۸۹٬۰۰۰</span> <span class="text-[10px] font-bold text-[#3E2A1E]/60">تومان</span></span>
+              </div>
+              <p class="text-[12.5px] leading-6 text-[#3E2A1E]/70 mt-[2mm]">فلافل نخودیِ ترد با داخلی نرم، کاهو، خیارشور و سس طحینی با لیموی تازه — سبک و سیرکننده</p>
+            </div>
+          </li>
+
+          <li class="py-[3.4mm] flex gap-[4.5mm] items-start">
+            <div class="relative shrink-0">
+              <img src="https://images.pexels.com/photos/29614913/pexels-photo-29614913.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="پنینی سبز و موزارلا" class="w-[23mm] h-[23mm] rounded-full object-cover ring-2 ring-[#D98E2B] ring-offset-[3px] ring-offset-[#FBF6EB]">
+              <span class="font-display absolute -top-1 -right-1 text-[13px] bg-[#3E2A1E] text-[#FBF6EB] w-6 h-6 rounded-full flex items-center justify-center">۴</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-end gap-2">
+                <h3 class="font-display text-[20px] text-[#3E2A1E] leading-none">پنینی سبز و موزارلا</h3>
+                <span class="inline-flex items-center gap-1 text-[10px] font-bold text-[#6F7D4C] bg-[#6F7D4C]/10 rounded-full px-2 py-0.5 mb-[2px]"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>گیاهی</span>
+                <span class="leader flex-1 min-w-4"></span>
+                <span class="whitespace-nowrap rounded-lg border-2 border-dashed border-[#D98E2B]/60 bg-[#FFFCF3] px-2 py-0.5 rotate-[-2deg]"><span class="font-display text-[19px] text-[#B4741C]">۱۰۵٬۰۰۰</span> <span class="text-[10px] font-bold text-[#3E2A1E]/60">تومان</span></span>
+              </div>
+              <p class="text-[12.5px] leading-6 text-[#3E2A1E]/70 mt-[2mm]">کدو و بادمجان گریل، فلفل دلمهٔ تُندور، پستوی ریحانِ باغچهٔ خودمون و موزارلای تازه</p>
+            </div>
+          </li>
+
+          <li class="py-[3.4mm] flex gap-[4.5mm] items-start">
+            <div class="relative shrink-0">
+              <img src="https://images.pexels.com/photos/17300434/pexels-photo-17300434.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="مرغ سوخاری ترد" class="w-[23mm] h-[23mm] rounded-full object-cover ring-2 ring-[#D98E2B] ring-offset-[3px] ring-offset-[#FBF6EB]">
+              <span class="font-display absolute -top-1 -right-1 text-[13px] bg-[#3E2A1E] text-[#FBF6EB] w-6 h-6 rounded-full flex items-center justify-center">۵</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-end gap-2">
+                <h3 class="font-display text-[20px] text-[#3E2A1E] leading-none">مرغ سوخاریِ ترد</h3>
+                <span class="inline-flex items-center gap-1 text-[10px] font-bold text-[#BC3B23] bg-[#BC3B23]/10 rounded-full px-2 py-0.5 mb-[2px]"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/></svg>تند</span>
+                <span class="leader flex-1 min-w-4"></span>
+                <span class="whitespace-nowrap rounded-lg border-2 border-dashed border-[#D98E2B]/60 bg-[#FFFCF3] px-2 py-0.5 rotate-[1deg]"><span class="font-display text-[19px] text-[#B4741C]">۱۳۸٬۰۰۰</span> <span class="text-[10px] font-bold text-[#3E2A1E]/60">تومان</span></span>
+              </div>
+              <p class="text-[12.5px] leading-6 text-[#3E2A1E]/70 mt-[2mm]">سینهٔ مرغِ پنیره‌شدهٔ دستی با سس چیلی مخصوص، کاهو و پیازِ کاراملی — قابل سفارشِ بدون تندی</p>
+            </div>
+          </li>
+
+          <li class="py-[3.4mm] flex gap-[4.5mm] items-start">
+            <div class="relative shrink-0">
+              <img src="https://images.pexels.com/photos/5122952/pexels-photo-5122952.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="مرغ و سبزیجات روز" class="w-[23mm] h-[23mm] rounded-full object-cover ring-2 ring-[#D98E2B] ring-offset-[3px] ring-offset-[#FBF6EB]">
+              <span class="font-display absolute -top-1 -right-1 text-[13px] bg-[#3E2A1E] text-[#FBF6EB] w-6 h-6 rounded-full flex items-center justify-center">۶</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-end gap-2">
+                <h3 class="font-display text-[20px] text-[#3E2A1E] leading-none">مرغ و سبزیجاتِ روز</h3>
+                <span class="leader flex-1 min-w-4"></span>
+                <span class="whitespace-nowrap rounded-lg border-2 border-dashed border-[#D98E2B]/60 bg-[#FFFCF3] px-2 py-0.5 rotate-[-1.5deg]"><span class="font-display text-[19px] text-[#B4741C]">۱۱۲٬۰۰۰</span> <span class="text-[10px] font-bold text-[#3E2A1E]/60">تومان</span></span>
+              </div>
+              <p class="text-[12.5px] leading-6 text-[#3E2A1E]/70 mt-[2mm]">برش‌های مرغ گریل با کاهو، گوجه، آووکادو و سس سبزیجات در نانِ تیرهٔ جو — پیشنهاد رژیمیِ خونه</p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- یادداشت بخش -->
+        <div class="mt-auto mb-[4mm] bg-[#F3EADA] rounded-2xl border-2 border-dashed border-[#3E2A1E]/15 px-[5mm] py-[3.5mm] flex items-center gap-3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 shrink-0 text-[#B4741C]"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+          <p class="text-[11.5px] leading-5 text-[#3E2A1E]/75">کنار هر ناهار <span class="font-bold text-[#B4741C]">دوغ محلی یا نوشابهٔ خانگی رایگانه</span> • برای مهمانی و جمع‌های خانوادگی، از یک روز قبل پیش‌سفارش بگیرید تا تخفیف گروهی هم بگیرید</p>
+        </div>
+
+        <!-- پاورقی -->
+        <div class="pt-[4mm] flex items-center justify-between border-t-2 border-dotted border-[#3E2A1E]/25 text-[11px] text-[#3E2A1E]/60">
+          <p class="font-semibold">ساندویچ خونه • سفارش: ۰۹۱۲ ۳۴۵ ۶۷۸۹</p>
+          <p>صفحهٔ ۳ از ۴</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ صفحهٔ ۴ : افزودنی‌ها، نوشیدنی و سفارش ═══════════════ -->
+    <section class="page relative mx-auto bg-[#FBF6EB] overflow-hidden shadow-[0_10px_50px_rgba(62,42,30,.25)]">
+      <div class="absolute inset-0 paper-dots"></div>
+      <div class="absolute inset-[5mm] border-2 border-dashed border-[#3E2A1E]/20 rounded-[6mm] pointer-events-none"></div>
+
+      <div class="relative h-full flex flex-col px-[13mm] pt-[11mm] pb-[10mm]">
+
+        <!-- بنر بخش -->
+        <div class="cloth-lines bg-[#6F7D4C] rounded-[5mm] text-[#FBF6EB] pl-[6mm] pr-[6mm] py-[5mm] flex items-center justify-between">
+          <div class="flex items-center gap-[4mm]">
+            <div class="w-11 h-11 rounded-full bg-[#FBF6EB]/15 border-2 border-dashed border-[#FBF6EB]/50 flex items-center justify-center">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+            </div>
+            <div>
+              <h2 class="font-display text-[30px] leading-none">کنارِ میز و راهِ سفارش</h2>
+              <p class="text-[11.5px] mt-1 text-[#FBF6EB]/80">افزودنی‌ها، نوشیدنی‌ها و هرچی برای سفارش لازم دارید</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- دو ستون افزودنی و نوشیدنی -->
+        <div class="mt-[6mm] grid grid-cols-2 gap-[6mm]">
+
+          <div class="bg-[#FFFCF3] rounded-[4mm] border-2 border-dashed border-[#6F7D4C]/40 p-[5mm]">
+            <div class="flex items-center gap-2 border-b-2 border-dotted border-[#3E2A1E]/20 pb-2 mb-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-[#6F7D4C]"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
+              <h3 class="font-display text-[19px] text-[#3E2A1E]">افزودنی‌ها</h3>
+            </div>
+            <ul class="flex flex-col gap-[2.6mm] text-[12.5px]">
+              <li class="flex items-end gap-2"><span class="font-semibold text-[#3E2A1E]">سیب‌زمینیِ سرخ‌کردهٔ خانگی</span><span class="leader-sm flex-1 min-w-3"></span><span class="font-display text-[15px] text-[#6F7D4C] whitespace-nowrap">۴۵٬۰۰۰</span></li>
+              <li class="flex items-end gap-2"><span class="font-semibold text-[#3E2A1E]">سس دست‌ساز (سیر / خردل / چیلی)</span><span class="leader-sm flex-1 min-w-3"></span><span class="font-display text-[15px] text-[#6F7D4C] whitespace-nowrap">۱۲٬۰۰۰</span></li>
+              <li class="flex items-end gap-2"><span class="font-semibold text-[#3E2A1E]">سالاد سبز روز با بالزامیک</span><span class="leader-sm flex-1 min-w-3"></span><span class="font-display text-[15px] text-[#6F7D4C] whitespace-nowrap">۵۵٬۰۰۰</span></li>
+              <li class="flex items-end gap-2"><span class="font-semibold text-[#3E2A1E]">موزارلای اضافه</span><span class="leader-sm flex-1 min-w-3"></span><span class="font-display text-[15px] text-[#6F7D4C] whitespace-nowrap">۱۸٬۰۰۰</span></li>
+              <li class="flex items-end gap-2"><span class="font-semibold text-[#3E2A1E]">خیارشور کوچکِ خانگی</span><span class="leader-sm flex-1 min-w-3"></span><span class="font-display text-[15px] text-[#6F7D4C] whitespace-nowrap">۱۵٬۰۰۰</span></li>
+              <li class="flex items-end gap-2"><span class="font-semibold text-[#3E2A1E]">تخم‌مرغ نیم‌روی اضافه</span><span class="leader-sm flex-1 min-w-3"></span><span class="font-display text-[15px] text-[#6F7D4C] whitespace-nowrap">۱۲٬۰۰۰</span></li>
+            </ul>
+            <p class="text-[10px] text-[#3E2A1E]/50 mt-3">قیمت‌ها به تومان است</p>
+          </div>
+
+          <div class="bg-[#FFFCF3] rounded-[4mm] border-2 border-dashed border-[#6F7D4C]/40 p-[5mm]">
+            <div class="flex items-center gap-2 border-b-2 border-dotted border-[#3E2A1E]/20 pb-2 mb-2">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-[#6F7D4C]"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" x2="6" y1="2" y2="4"/><line x1="10" x2="10" y1="2" y2="4"/><line x1="14" x2="14" y1="2" y2="4"/></svg>
+              <h3 class="font-display text-[19px] text-[#3E2A1E]">نوشیدنی‌ها</h3>
+            </div>
+            <ul class="flex flex-col gap-[2.6mm] text-[12.5px]">
+              <li class="flex items-end gap-2"><span class="font-semibold text-[#3E2A1E]">چای سقزی با نبات</span><span class="leader-sm flex-1 min-w-3"></span><span class="font-display text-[15px] text-[#6F7D4C] whitespace-nowrap">۲۰٬۰۰۰</span></li>
+              <li class="flex items-end gap-2"><span class="font-semibold text-[#3E2A1E]">قهوهٔ ترک</span><span class="leader-sm flex-1 min-w-3"></span><span class="font-display text-[15px] text-[#6F7D4C] whitespace-nowrap">۴۰٬۰۰۰</span></li>
+              <li class="flex items-end gap-2"><span class="font-semibold text-[#3E2A1E]">آب‌میوهٔ فصل</span><span class="leader-sm flex-1 min-w-3"></span><span class="font-display text-[15px] text-[#6F7D4C] whitespace-nowrap">۶۰٬۰۰۰</span></li>
+              <li class="flex items-end gap-2"><span class="font-semibold text-[#3E2A1E]">دوغِ محلی با نعناع</span><span class="leader-sm flex-1 min-w-3"></span><span class="font-display text-[15px] text-[#6F7D4C] whitespace-nowrap">۲۵٬۰۰۰</span></li>
+              <li class="flex items-end gap-2"><span class="font-semibold text-[#3E2A1E]">دمنوش بهارنارنج</span><span class="leader-sm flex-1 min-w-3"></span><span class="font-display text-[15px] text-[#6F7D4C] whitespace-nowrap">۳۰٬۰۰۰</span></li>
+              <li class="flex items-end gap-2"><span class="font-semibold text-[#3E2A1E]">شکلات داغ</span><span class="leader-sm flex-1 min-w-3"></span><span class="font-display text-[15px] text-[#6F7D4C] whitespace-nowrap">۵۰٬۰۰۰</span></li>
+            </ul>
+            <p class="text-[10px] text-[#3E2A1E]/50 mt-3">کنار هر صبحانه چای رایگان / کنار هر ناهار دوغ رایگان</p>
+          </div>
+        </div>
+
+        <!-- نوار تصویری -->
+        <div class="mt-[6mm] grid grid-cols-3 gap-[4mm]">
+          <div class="relative">
+            <img src="https://images.pexels.com/photos/18741147/pexels-photo-18741147.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="عسل روی تست فرانسوی" class="h-[26mm] w-full rounded-[4mm] object-cover ring-1 ring-[#3E2A1E]/15 rotate-[-1deg]">
+            <div class="absolute -top-2 right-1/2 translate-x-1/2 w-[18mm] h-[5.5mm] bg-[#E8B04B]/80 rotate-[-2deg] rounded-sm"></div>
+          </div>
+          <div class="relative">
+            <img src="https://images.pexels.com/photos/25225626/pexels-photo-25225626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="ساندویچ و سالاد" class="h-[26mm] w-full rounded-[4mm] object-cover ring-1 ring-[#3E2A1E]/15 rotate-[1.5deg]">
+            <div class="absolute -top-2 right-1/2 translate-x-1/2 w-[18mm] h-[5.5mm] bg-[#BC3B23]/70 rotate-[2deg] rounded-sm"></div>
+          </div>
+          <div class="relative">
+            <img src="https://images.pexels.com/photos/26736319/pexels-photo-26736319.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="تست تخم‌مرغ" class="h-[26mm] w-full rounded-[4mm] object-cover ring-1 ring-[#3E2A1E]/15 rotate-[-1.5deg]">
+            <div class="absolute -top-2 right-1/2 translate-x-1/2 w-[18mm] h-[5.5mm] bg-[#6F7D4C]/80 rotate-[-3deg] rounded-sm"></div>
+          </div>
+        </div>
+
+        <!-- راهنمای سفارش -->
+        <div class="mt-[6mm] bg-[#3E2A1E] text-[#FBF6EB] rounded-[4mm] p-[5mm]">
+          <p class="font-display text-[19px] mb-[3.5mm]">چطور سفارش بدهم؟</p>
+          <div class="grid grid-cols-3 gap-[4mm]">
+            <div class="flex items-start gap-3">
+              <span class="font-display shrink-0 w-9 h-9 rounded-full border-2 border-dashed border-[#E8B04B] text-[#E8B04B] flex items-center justify-center text-[17px]">۱</span>
+              <p class="text-[11.5px] leading-5 text-[#FBF6EB]/80"><span class="font-bold text-[#FBF6EB]">تماس یا پیام</span><br>بعد از ناهار فقط برای فردا سفارش بگیرید</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-display shrink-0 w-9 h-9 rounded-full border-2 border-dashed border-[#E8B04B] text-[#E8B04B] flex items-center justify-center text-[17px]">۲</span>
+              <p class="text-[11.5px] leading-5 text-[#FBF6EB]/80"><span class="font-bold text-[#FBF6EB]">تأیید و زمان</span><br>سفارش‌تان را تأیید و ساعت تحویل را می‌گوییم</p>
+            </div>
+            <div class="flex items-start gap-3">
+              <span class="font-display shrink-0 w-9 h-9 rounded-full border-2 border-dashed border-[#E8B04B] text-[#E8B04B] flex items-center justify-center text-[17px]">۳</span>
+              <p class="text-[11.5px] leading-5 text-[#FBF6EB]/80"><span class="font-bold text-[#FBF6EB]">تحویل داغ دمِ در</span><br>داخل محله با سبد، شهرک با پیکِ هوای‌دار</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- کارت تماس و ساعات -->
+        <div class="mt-[5mm] grid grid-cols-2 gap-[4mm]">
+          <div class="bg-[#E8B04B] rounded-[4mm] p-[5mm] text-[#3E2A1E]">
+            <p class="font-display text-[19px] mb-[3mm]">راه‌های سفارش</p>
+            <div class="flex items-center gap-2.5 mb-[2.5mm]">
+              <span class="w-8 h-8 rounded-full bg-[#3E2A1E] text-[#E8B04B] flex items-center justify-center shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <div><p class="text-[10px] font-bold opacity-70">تلفن و واتساپ</p><p class="font-display text-[19px] leading-none tracking-wider">۰۹۱۲ ۳۴۵ ۶۷۸۹</p></div>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="w-8 h-8 rounded-full bg-[#3E2A1E] text-[#E8B04B] flex items-center justify-center shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></span>
+              <div><p class="text-[10px] font-bold opacity-70">اینستاگرام</p><p class="font-bold text-[13px] leading-none" dir="ltr">@sandwich.khooneh</p></div>
+            </div>
+          </div>
+          <div class="bg-[#FFFCF3] rounded-[4mm] border-2 border-dashed border-[#BC3B23]/35 p-[5mm] text-[#3E2A1E]">
+            <p class="font-display text-[19px] mb-[3mm]">ساعات و آدرس</p>
+            <div class="flex items-center gap-2.5 mb-[2.5mm]">
+              <span class="w-8 h-8 rounded-full bg-[#BC3B23] text-[#FBF6EB] flex items-center justify-center shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+              <p class="text-[11.5px] leading-5"><span class="font-bold">شنبه تا پنجشنبه:</span> ۷:۰۰ تا ۱۶:۰۰<br><span class="font-bold">جمعه‌ها:</span> فقط پیش‌سفارش مهمانی</p>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <span class="w-8 h-8 rounded-full bg-[#BC3B23] text-[#FBF6EB] flex items-center justify-center shrink-0"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <p class="text-[11.5px] leading-5">شهرک غرب، بلوار فرحزادی، کوچهٔ بهار پلاک ۱۲<br>ارسال بالای ۳۰۰ هزار تومان، داخل محله رایگان</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- جملهٔ پایانی -->
+        <p class="mt-[5mm] text-center font-display text-[21px] text-[#6F7D4C]">«غذای خوب، مثل مهربونی، از خونه شروع می‌شه»</p>
+
+        <!-- پاورقی -->
+        <div class="mt-auto pt-[4mm] flex items-center justify-between border-t-2 border-dotted border-[#3E2A1E]/25 text-[11px] text-[#3E2A1E]/60">
+          <p class="font-semibold">ساندویچ خونه • سفارش: ۰۹۱۲ ۳۴۵ ۶۷۸۹</p>
+          <p>صفحهٔ ۴ از ۴</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
